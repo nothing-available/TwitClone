@@ -3,6 +3,11 @@
 import { useState } from "react"
 
 import { Button } from "@/components/ui/button"
+import { Appointment } from "@/types/appwrite.types"
+
+import { AppointmentForm } from "./forms/AppointmentForm"
+
+import "react-datepicker/dist/react-datepicker.css"
 import {
   Dialog,
   DialogContent,
@@ -10,12 +15,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
-import { Appointment } from "@/types/appwrite.types"
-
-import { AppointmentForm } from "./forms/AppointmentForm"
-
-import "react-datepicker/dist/react-datepicker.css"
+} from "./ui/dialog"
 
 export const AppointmentModal = ({
   patientId,
