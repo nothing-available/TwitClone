@@ -13,13 +13,11 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
-
 import {
   InputOTP,
   InputOTPGroup,
   InputOTPSlot,
 } from "@/components/ui/input-otp"
-
 import { decryptKey, encryptKey } from "@/lib/utils"
 
 export const PasskeyModal = () => {
@@ -92,7 +90,7 @@ export const PasskeyModal = () => {
           <InputOTP
             maxLength={6}
             value={passkey}
-            onChange={value => setPasskey(value)}>
+            onChange={(value: any) => setPasskey(value)}>
             <InputOTPGroup className='shad-otp'>
               <InputOTPSlot
                 className='shad-otp-slot'
